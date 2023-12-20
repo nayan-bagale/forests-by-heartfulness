@@ -55,7 +55,7 @@ const Donatation_form = () => {
             />
           </div>
 
-          <button className=" rounded-full bg-[linear-gradient(0deg,_#5899D0,_#5899D0)] text-sm font-medium text-colorWhite active:bg-[linear-gradient(0deg,_#276EF1,_#276EF1)] md:p-2 lg:p-3">
+          <button className=" mr-12 rounded-full bg-[linear-gradient(0deg,_#5899D0,_#5899D0)] text-sm font-medium text-colorWhite shadow-md active:bg-[linear-gradient(0deg,_#276EF1,_#276EF1)] md:p-2 lg:p-3">
             Donate
           </button>
         </div>
