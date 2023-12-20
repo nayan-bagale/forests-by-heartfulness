@@ -11,10 +11,10 @@ export const Header = () => {
     <header className="py-5">
       <nav>
         <Container className="flex items-center justify-between">
-          <div>
-            <Image src={logo} alt="logo" width={100} height={100} />
+          <div className=" ml-6">
+            <Image src={logo} alt="logo" width={120} height={120} />
           </div>
-          <div className="flex w-[15%] items-center justify-between underline">
+          <div className="mr-8 flex w-[15%] items-center justify-evenly font-semibold underline">
             <button className="flex items-center">
               <LanguageIcon variant="secondary" />
               IN-EN

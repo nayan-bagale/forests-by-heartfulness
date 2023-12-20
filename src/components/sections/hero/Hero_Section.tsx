@@ -7,7 +7,7 @@ const Hero_Section = () => {
       <div className=" brightness-50">
         <Image src={hero_image} alt="hero image" width={2500} height={2500} />
       </div>
-      <h1 className=" absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 text-center italic text-colorWhite">
+      <h1 className=" absolute top-[40%] left-2/4 w-full -translate-x-2/4 -translate-y-2/4 text-center text-5xl italic leading-relaxed text-colorWhite">
         Creating Mini Forests Of Indigenous And <br />
         Native Species Across India
       </h1>
