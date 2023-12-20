@@ -5,10 +5,10 @@ const Page = () => {
   return (
     <>
       <div className="relative flex">
-        <div className=" blur-sm">
+        <div className=" brightness-50">
           <Image src={hero_image} alt="hero image" width={1800} height={1800} />
         </div>
-        <h1 className="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4">
+        <h1 className=" absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 text-colorWhite">
           Creating Mini Forests Of Indigenous And Native Species Across India
         </h1>
       </div>
