@@ -12,52 +12,50 @@ const Donatation_form = () => {
   };
 
   return (
-    <div className=" flex w-[40%] px-8">
+    <div className=" flex w-[40%] justify-center px-8">
       <div className="flex flex-col gap-5 text-[#173E5F] ">
-        <h2>
+        <h1>
           Be the reason someone <br /> smiles today.
-        </h2>
+        </h1>
         <div className="flex flex-col gap-5">
-          <p className="text-lg font-medium">Choose an amount to donate</p>
-          <div className=" flex items-center justify-center gap-8">
-            <button
-              className=" h-20 w-36 rounded border-2 text-lg font-medium"
-              onClick={() => setAmount(50)}>
-              {' '}
-              &#8377;50
-            </button>
-            <button
-              className=" h-20 w-36 rounded border-2 text-lg font-medium"
-              onClick={() => setAmount(200)}>
-              {' '}
-              &#8377;200
-            </button>
+          <p className="text-xl font-medium">Choose an amount to donate</p>
+          <div className="flex flex-col gap-5">
+            <div className=" flex items-center justify-center gap-8">
+              <button
+                className=" rounded border-2 font-medium md:h-20 md:w-36 md:text-lg lg:h-24 lg:w-48 lg:text-2xl"
+                onClick={() => setAmount(50)}>
+                {' '}
+                &#8377;50
+              </button>
+              <button
+                className=" rounded border-2 font-medium md:h-20 md:w-36 md:text-lg lg:h-24 lg:w-48 lg:text-2xl"
+                onClick={() => setAmount(200)}>
+                {' '}
+                &#8377;200
+              </button>
+            </div>
+            <div className=" flex items-center justify-center gap-8">
+              <button
+                className=" rounded border-2 font-medium md:h-20 md:w-36 md:text-lg lg:h-24 lg:w-48 lg:text-2xl"
+                onClick={() => setAmount(1000)}>
+                &#8377;1000
+              </button>
+              <button
+                className=" rounded border-2 font-medium md:h-20 md:w-36 md:text-lg lg:h-24 lg:w-48 lg:text-2xl"
+                onClick={() => setAmount(5000)}>
+                &#8377;5000
+              </button>
+            </div>
+            <input
+              className="mx-8 rounded border-2 bg-[transparent] px-4 text-lg font-medium placeholder:font-bold placeholder:text-[#173E5F] md:h-20 lg:h-24 lg:text-xl"
+              type="number"
+              placeholder="&#8377; Enter a custom amount"
+              value={amount ? amount : ''}
+              onChange={handleAmountChange}
+            />
           </div>
-          <div className=" flex items-center justify-center gap-8">
-            <button
-              className=" h-20 w-36 rounded border-2 text-lg font-medium"
-              onClick={() => setAmount(1000)}>
-              &#8377;1000
-            </button>
-            <button
-              className=" h-20 w-36 rounded border-2 text-lg font-medium"
-              onClick={() => setAmount(5000)}>
-              &#8377;5000
-            </button>
-          </div>
-          <input
-            className="h-20 rounded border-2 bg-[transparent] px-4 text-lg font-medium placeholder:font-bold placeholder:text-[#173E5F]"
-            type="number"
-            placeholder="&#8377; Enter a custom amount"
-            value={amount ? amount : ''}
-            onChange={handleAmountChange}
-          />
-          <button
-            className=" rounded-full p-2 font-medium text-colorWhite "
-            style={{
-              background:
-                'linear-gradient(0deg, #276EF1, #276EF1), linear-gradient(0deg, #5899D0, #5899D0)',
-            }}>
+
+          <button className=" rounded-full bg-[linear-gradient(0deg,_#5899D0,_#5899D0)] text-sm font-medium text-colorWhite active:bg-[linear-gradient(0deg,_#276EF1,_#276EF1)] md:p-2 lg:p-3">
             Donate
           </button>
         </div>
