@@ -1,9 +1,8 @@
 import { useTranslation } from 'next-i18next';
-import Link from 'next/link';
-
-import BlogLogo from '@icons/blog-logo.svg';
-import { LanguageSelector } from '@src/components/features/language-selector';
+import { LanguageIcon } from '@contentful/f36-icons';
 import { Container } from '@src/components/shared/container';
+import Image from 'next/image';
+import logo from '@public/images/logo.png';
 
 export const Header = () => {
   const { t } = useTranslation();
@@ -12,10 +11,16 @@ export const Header = () => {
     <header className="py-5">
       <nav>
         <Container className="flex items-center justify-between">
-          <Link href="/" title={t('common.homepage')}>
-            <BlogLogo />
-          </Link>
-          <LanguageSelector />
+          <div>
+            <Image src={logo} alt="logo" width={100} height={100} />
+          </div>
+          <div className="flex w-[15%] items-center justify-between underline">
+            <button className="flex items-center">
+              <LanguageIcon variant="secondary" />
+              IN-EN
+            </button>
+            <button>SIGN IN</button>
+          </div>
         </Container>
       </nav>
     </header>
