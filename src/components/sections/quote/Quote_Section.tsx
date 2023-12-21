@@ -2,8 +2,8 @@ import { Container } from '@src/components/shared/container';
 
 const Quote_Section = () => {
   return (
-    <Container className="mx-20 flex h-[20rem] items-center">
-      <p className=" text-center text-2xl font-medium text-[#173E5F]">
+    <Container className=" flex h-[20rem] w-full items-center justify-center md:my-20">
+      <p className=" w-[78ch] text-center text-xs font-medium text-[#173E5F] md:text-xl lg:text-3xl">
         We are depleting the Earth's natural resources, polluting its air and water, destabilising
         the climate, and driving many of its species to extinction.The total forest cover in India
         is 80.73* million hectares which forms 24.56%* of the geographical area of the country. The

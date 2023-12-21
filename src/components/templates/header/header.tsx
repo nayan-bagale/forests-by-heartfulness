@@ -8,18 +8,18 @@ export const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <header className="py-5">
+    <header className=" py-3 md:py-5">
       <nav>
         <Container className="flex items-center justify-between">
-          <div className=" ml-6">
+          <div className=" w-14 md:ml-6 md:w-full">
             <Image src={logo} alt="logo" width={120} height={120} />
           </div>
-          <div className="mr-8 flex w-[15%] items-center justify-evenly font-semibold underline">
-            <button className="flex items-center">
+          <div className="flex items-center justify-evenly gap-4 font-semibold underline  md:mr-8 md:w-[15%]">
+            <button className="flex items-center text-xs">
               <LanguageIcon variant="secondary" />
               IN-EN
             </button>
-            <button>SIGN IN</button>
+            <button className="text-xs">SIGN IN</button>
           </div>
         </Container>
       </nav>

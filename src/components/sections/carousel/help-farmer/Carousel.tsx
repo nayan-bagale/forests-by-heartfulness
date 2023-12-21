@@ -12,17 +12,51 @@ import Image from 'next/image';
 
 const Carousel = () => {
   return (
-    <div className=" mb-20 flex h-full w-[60%] justify-end">
-      <div className=" relative flex w-fit text-colorWhite ">
-        <Image src={farmer} alt="farmer" width={950} height={950} />
-        <div className="absolute bottom-8 left-8 h-[30%] w-[55%] bg-[#0F3A30] p-4 pt-6  shadow">
-          <h1 className=" md:text-base lg:text-xl">Help Farmers like Sam and his wife</h1>
-          <p className=" mt-4 leading-8 text-colorWhite md:text-sm lg:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit
-          </p>
-        </div>
-      </div>
+    <div className=" flex min-h-[400px] w-full justify-end md:min-h-[600px] md:w-[50%] lg:h-full">
+      <Swiper pagination={true} modules={[Pagination]} loop={true} className="mySwiper">
+        <SwiperSlide>
+          <div className=" relative flex h-full w-full overflow-hidden text-colorWhite ">
+            <Image src={farmer} alt="farmer" className=" object-cover" width={900} height={900} />
+            <div className="absolute bottom-8 left-8 h-[35%] w-[55%] bg-[#0F3A30] p-2 pt-3 shadow md:h-[33%] md:p-4 md:pt-6">
+              <h1 className=" text-sm md:text-base lg:text-xl">
+                Help Farmers like Sam and his wife
+              </h1>
+              <p className=" mt-1 text-xs text-colorWhite md:text-sm lg:mt-4 lg:text-base lg:leading-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit
+              </p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=" relative flex h-full w-full overflow-hidden text-colorWhite ">
+            <Image src={farmer} alt="farmer" className=" object-cover" width={900} height={900} />
+            <div className="absolute bottom-8 left-8 h-[35%] w-[55%] bg-[#0F3A30] p-2 pt-3 shadow md:h-[33%] md:p-4 md:pt-6">
+              <h1 className=" text-sm md:text-base lg:text-xl">
+                Help Farmers like Sam and his wife
+              </h1>
+              <p className=" mt-1 text-xs text-colorWhite md:text-sm lg:mt-4 lg:text-base lg:leading-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit
+              </p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=" relative flex h-full w-full overflow-hidden text-colorWhite ">
+            <Image src={farmer} alt="farmer" className=" object-cover" width={900} height={900} />
+            <div className="absolute bottom-8 left-8 h-[35%] w-[55%] bg-[#0F3A30] p-2 pt-3 shadow md:h-[33%] md:p-4 md:pt-6">
+              <h1 className=" text-sm md:text-base lg:text-xl">
+                Help Farmers like Sam and his wife
+              </h1>
+              <p className=" mt-1 text-xs text-colorWhite md:text-sm lg:mt-4 lg:text-base lg:leading-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit
+              </p>
+            </div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 };
