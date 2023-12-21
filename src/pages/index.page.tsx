@@ -6,6 +6,7 @@ import Video_Gallery from '@src/components/sections/video-gallery/Video_Gallery'
 const Page = () => {
   return (
     <>
+    hello
       <Hero_Section />
       <Quote_Section />
       <Donate_Carousel />
